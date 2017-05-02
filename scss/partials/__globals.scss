@@ -1,0 +1,57 @@
+/**************************
+    General Styles
+***************************/
+$content-width: 950px;
+
+*,
+*:before,
+*:after {
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+body {
+  margin: 0px;
+  position: relative;
+  width: 100vw;
+  overflow-x:hidden;
+}
+.wrapper {
+  width: $content-width;
+  margin: 0 auto;
+}
+.panel {
+      padding: 0;
+  h1 {
+      font-size: 40px;
+      font-weight: 600;
+  }
+  h2 {
+      font-size: 20px;
+      font-weight: 600;
+  }
+  h3 {
+    font-size: 16px;
+  }
+}
+.flex {
+  @include flexbox;
+
+  // border: 2px solid red;
+}
+ul {
+list-style-type: none;
+}
+li a {
+    color: #333;
+    // text-decoration: underline;
+    border-bottom: 1px solid;
+}

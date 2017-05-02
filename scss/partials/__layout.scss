@@ -1,0 +1,252 @@
+
+// Top header in container styling
+.container {
+  @include flex(flex);
+  @include flex-flow(row-reverse nowrap);
+  @include respond-to("for-phone-only") {
+    @include flex(flex);
+    @include flex-flow(column-reverse);
+    position:relative;
+    top: 999px;
+  }
+}
+header.page-header{
+  height: 200px;
+  width: 650px;
+  padding-top: 62px;
+  text-align: center;
+  border: 2px solid white;
+  text-transform: uppercase;
+  background: rgb(225, 206, 189); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(225, 206, 189), rgb(238, 227, 220)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(225, 206, 189),  rgb(238, 227, 220)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(225, 206, 189), rgb(238, 227, 220)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(225, 206, 189),  rgb(238, 227, 220)); /* Standard syntax (must be last) */
+  h1 {
+    line-height: 3.1;
+    letter-spacing: 1.0rem;
+  }
+  h3 {
+    background-color: rgb(126,127,126);
+    width: 275px;
+    padding: 7px;
+    letter-spacing: 1.0rem;
+    margin-left: 176px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+.hidden {
+  visibility: hidden
+}
+// Styling About me section
+.executive-summary {
+  padding: 25px 0 25px 0px;
+  h2 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+}
+
+// Work Experience Styling
+.right-container {
+  // border: 2px solid orange;
+  width: 650px;
+  @include flex-direction(column);
+}
+
+.resume-item-languages {
+  font-size: 14px;
+  line-height: 2rem;
+}
+
+.section-header {
+  padding: 20px 0px 20px;
+  .resume-header {
+    text-transform: uppercase;
+  }
+  .resume-header-container {
+    @include flex(flex);
+    @include flex-direction(row);
+    @include align-items(flex-start);
+
+    border: 2px solid green;
+  }
+}
+.resume-item-date {
+  width: 40%;
+  margin-right: 10px;
+  padding-top: 6px;
+  line-height: 1.5rem;
+}
+.resume-item {
+  @include flex(flex);
+  @include flex-direction(column);
+    line-height: 1.5rem;
+    width: 210%;
+  .resume-item-title {
+    padding: 8px 0px 8px;
+  }
+  .resume-item-summary {
+    padding-bottom: 25px;
+  }
+  .resume-item-details {
+    font-size: 12px;
+  }
+  .resume-item-languages {
+    font-size: 13px;
+    padding-bottom: 5px;
+  }
+  h3 {
+    letter-spacing: .1rem;
+  }
+  .resume-item-list {
+    @include flex(flex);
+    @include flex-direction(column);
+  }
+}
+.left-container {
+  @include flex-direction(column);
+  // position: relative;
+  // right: 2s5px;
+  background-color: rgb(126,127,126);
+  @include respond-to("for-tablet-portrait-up") {
+    right: 25px;
+    width: 265px;
+  }
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  @include respond-to("for-phone-only") {
+    position: relative;
+    top: 0;
+  }
+}
+// Left container
+//Image Styling
+.avatar {
+  width: 158px;
+  margin: 31px 0px 0px 100px;
+  display: block;
+  overflow: hidden;
+  border-radius: 100px;
+
+  @include respond-to("for-tablet-portrait-up") {
+  width: 182px;
+  margin: 19px 0px 0px 43px;
+  }
+}
+.greeting {
+  font-family: 'Meddon', cursive;
+  font-size: 43px;
+  color: rgb(238, 227, 220);
+  position: relative;
+  bottom: 10px;
+  left: 105px;
+  @include respond-to("for-tablet-portrait-up") {
+  left: 69px;
+  }
+}
+.greeting-border {
+  height: 32px;
+  width: 200px;
+  border: 3px solid rgb(225, 206, 189);
+  margin: -71px 0px 0px 76px;
+  @include respond-to("for-tablet-portrait-up") {
+  margin: -71px 0px 0px 30px;
+  }
+}
+// Icon Styling
+.resume-contact-container {
+  padding: 16px 0px 0px 20px;
+  @include respond-to("for-tablet-portrait-up") {
+    padding: 16px 0px 0px 20px;
+    text-align: center;
+
+
+  }
+}
+.resume-contact {
+  position: relative;
+  top: 17px;
+  right: 6px;
+}
+.icon-menu {}
+  .icon-link-item {
+    display: flex;
+    position: relative;
+    left: 111px;
+    padding-bottom: 10px;
+    position: relative;
+    top: 6px;
+    @include respond-to("for-tablet-portrait-up") {
+      left: 43px;
+      top: 17px;
+      padding-bottom: 10px;
+    }
+  }
+  .icon-link-item-map {
+    padding-left: 67px;
+    @include respond-to("for-tablet-portrait-up") {
+      padding: 16px 0px 0px 20px;
+    }
+  }
+    .icon-link {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      right: 30px;
+    }
+    .link__icon_social {
+      text-align: center;
+      width: 10px;
+      height: 10px;
+      background: red;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+      background-color: rgb(225, 206, 189);
+      color: #9ea6b3;
+      padding: 1.2rem;
+    }
+    .icon_social {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .personal-summary {
+      display: flex;
+      width: 77%;
+      margin: 0 46px;
+      font-size: 12px;
+      color: #fff;
+    }
+    // Footer Styling
+    footer {
+      position: relative;
+      padding-left: 182px;
+      left: 10px;
+      width: 399px;
+      background-color: #e1cebd;
+      border-top: 1px solid #d9d9d9;
+      @include respond-to("for-tablet-landscape-up") {
+        width: 433px;
+        left: 47px;
+      }
+
+
+      // @include respond-to("for-mega-desktop-up") {
+      //   left: 10px;
+      //   padding-left: 55px;
+      //   overflow-x: hidden;
+      //   background-color: #e1cebd;
+      //   border-top: 1px solid #d9d9d9;
+      //   @include respond-to("for-tablet-portrait-up") {
+      //     padding-left: 520px;
+      //     left: 52px;
+      //     }
+      //   }
+      }
