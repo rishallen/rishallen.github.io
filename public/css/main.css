@@ -27,6 +27,9 @@ body {
 .wrapper {
   width: 950px;
   margin: 0 auto; }
+  @media (max-width: 599px) {
+    .wrapper {
+      padding-left: 10px; } }
 
 .panel {
   padding: 0; }
@@ -37,7 +40,7 @@ body {
     font-size: 20px;
     font-weight: 600; }
   .panel h3 {
-    font-size: 16px; }
+    font-size: 12px; }
 
 .flex {
   display: -webkit-box;
@@ -75,15 +78,19 @@ li a {
       -webkit-flex-flow: column-reverse;
       -moz-flex-flow: column-reverse;
       -ms-flex-flow: column-reverse;
-      flex-flow: column-reverse;
-      position: relative;
-      top: 999px; } }
+      flex-flow: column-reverse; } }
+
+.page-header.panel {
+  width: 77%; }
+  @media (min-width: 1024px) {
+    .page-header.panel {
+      width: 87%; } }
 
 header.page-header {
   height: 200px;
   width: 650px;
   padding-top: 62px;
-  text-align: center;
+  padding-left: 70px;
   border: 2px solid white;
   text-transform: uppercase;
   background: #e1cebd;
@@ -101,15 +108,34 @@ header.page-header {
     letter-spacing: 1.0rem; }
   header.page-header h3 {
     background-color: #7e7f7e;
-    width: 275px;
     padding: 7px;
     letter-spacing: 1.0rem;
-    margin-left: 176px;
+    width: 63%;
+    padding-left: 15px;
+    position: relative;
+    right: 9px;
     color: #fff;
     text-transform: uppercase; }
+    @media (max-width: 599px) {
+      header.page-header h3 {
+        width: 92%;
+        right: 28px; } }
+    @media (min-width: 1024px) {
+      header.page-header h3 {
+        width: 72%;
+        position: relative;
+        left: 33px; } }
 
 .hidden {
   visibility: hidden; }
+  @media (max-width: 599px) {
+    .hidden {
+      position: relative;
+      right: 31px; } }
+
+@media (max-width: 599px) {
+  .executive-summary-container {
+    width: 517px; } }
 
 .executive-summary {
   padding: 25px 0 25px 0px; }
@@ -119,6 +145,7 @@ header.page-header {
 
 .right-container {
   width: 650px;
+  padding-left: 15px;
   /* !row! | row-reverse | column | column-reverse */
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
@@ -126,6 +153,9 @@ header.page-header {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
+  @media (max-width: 599px) {
+    .right-container {
+      width: 575px; } }
 
 .resume-item-languages {
   font-size: 14px;
@@ -210,10 +240,14 @@ header.page-header {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  position: relative;
+  left: 17px;
+  width: 54%;
   background-color: #7e7f7e; }
   @media (min-width: 600px) {
     .left-container {
       right: 25px;
+      left: 2px;
       width: 265px; } }
 
 aside {
@@ -222,7 +256,8 @@ aside {
   @media (max-width: 599px) {
     aside {
       position: relative;
-      top: 0; } }
+      top: 0;
+      left: 100px; } }
 
 .avatar {
   width: 158px;
@@ -241,7 +276,7 @@ aside {
   color: #eee3dc;
   position: relative;
   bottom: 10px;
-  left: 105px; }
+  left: 112px; }
   @media (min-width: 600px) {
     .greeting {
       left: 69px; } }
@@ -256,16 +291,21 @@ aside {
       margin: -71px 0px 0px 30px; } }
 
 .resume-contact-container {
-  padding: 16px 0px 0px 20px; }
+  padding: 16px 0px 0px 19px; }
   @media (min-width: 600px) {
     .resume-contact-container {
-      padding: 16px 0px 0px 20px;
-      text-align: center; } }
+      padding: 16px 0px 0px 20px; } }
 
 .resume-contact {
   position: relative;
   top: 17px;
   right: 6px; }
+
+.resume-contact-2 {
+  padding-left: 40px; }
+
+.resume-contact-3 {
+  padding-left: 60px; }
 
 .icon-link-item {
   display: flex;
@@ -284,7 +324,7 @@ aside {
   padding-left: 67px; }
   @media (min-width: 600px) {
     .icon-link-item-map {
-      padding: 16px 0px 0px 20px; } }
+      padding: 16px 0px 24px 20px; } }
 
 .icon-link {
   display: inline-block;
@@ -319,12 +359,19 @@ aside {
 
 footer {
   position: relative;
-  padding-left: 182px;
-  left: 10px;
+  padding-left: 193px;
   width: 399px;
   background-color: #e1cebd;
   border-top: 1px solid #d9d9d9; }
+  @media (min-width: 600px) {
+    footer {
+      position: relative;
+      left: 21px;
+      padding-left: 277px;
+      width: 399px; } }
   @media (min-width: 1024px) {
     footer {
-      width: 433px;
-      left: 47px; } }
+      position: relative;
+      left: 59px;
+      padding-left: 453px;
+      width: 778px; } }

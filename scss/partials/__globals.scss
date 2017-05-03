@@ -27,6 +27,9 @@ body {
 .wrapper {
   width: $content-width;
   margin: 0 auto;
+  @include respond-to("for-phone-only") {
+    padding-left: 10px;
+  }
 }
 .panel {
       padding: 0;
@@ -39,7 +42,7 @@ body {
       font-weight: 600;
   }
   h3 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 .flex {

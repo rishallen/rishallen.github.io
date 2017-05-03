@@ -6,15 +6,19 @@
   @include respond-to("for-phone-only") {
     @include flex(flex);
     @include flex-flow(column-reverse);
-    position:relative;
-    top: 999px;
+  }
+}
+.page-header.panel {
+  width: 77%;
+  @include respond-to("for-tablet-landscape-up") {
+    width: 87%;
   }
 }
 header.page-header{
   height: 200px;
   width: 650px;
   padding-top: 62px;
-  text-align: center;
+  padding-left: 70px;
   border: 2px solid white;
   text-transform: uppercase;
   background: rgb(225, 206, 189); /* For browsers that do not support gradients */
@@ -28,18 +32,41 @@ header.page-header{
   }
   h3 {
     background-color: rgb(126,127,126);
-    width: 275px;
+    // width: 275px;
     padding: 7px;
     letter-spacing: 1.0rem;
-    margin-left: 176px;
+    // margin-left: 176px;
+    width: 63%;
+    padding-left: 15px;
+    position: relative;
+    right: 9px;
     color: #fff;
     text-transform: uppercase;
+    @include respond-to("for-phone-only") {
+      width: 92%;
+      right: 28px;
+    }
+    @include respond-to("for-tablet-landscape-up") {
+      width: 72%;
+      position: relative;
+      left: 33px;
+    }
   }
 }
 .hidden {
-  visibility: hidden
+  visibility: hidden;
+  @include respond-to("for-phone-only") {
+    position: relative;
+    right: 31px;
+  }
 }
 // Styling About me section
+.executive-summary-container {
+  @include respond-to("for-phone-only") {
+    width: 517px;
+
+  }
+}
 .executive-summary {
   padding: 25px 0 25px 0px;
   h2 {
@@ -50,9 +77,12 @@ header.page-header{
 
 // Work Experience Styling
 .right-container {
-  // border: 2px solid orange;
   width: 650px;
+  padding-left: 15px;
   @include flex-direction(column);
+  @include respond-to("for-phone-only") {
+    width: 575px;
+  }
 }
 
 .resume-item-languages {
@@ -107,11 +137,13 @@ header.page-header{
 }
 .left-container {
   @include flex-direction(column);
-  // position: relative;
-  // right: 2s5px;
+  position: relative;
+  left: 17px;
+  width: 54%;
   background-color: rgb(126,127,126);
   @include respond-to("for-tablet-portrait-up") {
     right: 25px;
+    left: 2px;
     width: 265px;
   }
 }
@@ -119,9 +151,11 @@ header.page-header{
 aside {
   position: fixed;
   top: 0;
+  // left: 88px;
   @include respond-to("for-phone-only") {
     position: relative;
     top: 0;
+    left: 100px;
   }
 }
 // Left container
@@ -144,7 +178,7 @@ aside {
   color: rgb(238, 227, 220);
   position: relative;
   bottom: 10px;
-  left: 105px;
+  left: 112px;
   @include respond-to("for-tablet-portrait-up") {
   left: 69px;
   }
@@ -160,18 +194,21 @@ aside {
 }
 // Icon Styling
 .resume-contact-container {
-  padding: 16px 0px 0px 20px;
+  padding: 16px 0px 0px 19px;
   @include respond-to("for-tablet-portrait-up") {
     padding: 16px 0px 0px 20px;
-    text-align: center;
-
-
   }
 }
 .resume-contact {
   position: relative;
   top: 17px;
   right: 6px;
+}
+.resume-contact-2 {
+  padding-left: 40px;
+}
+.resume-contact-3 {
+  padding-left: 60px;
 }
 .icon-menu {}
   .icon-link-item {
@@ -190,7 +227,7 @@ aside {
   .icon-link-item-map {
     padding-left: 67px;
     @include respond-to("for-tablet-portrait-up") {
-      padding: 16px 0px 0px 20px;
+      padding: 16px 0px 24px 20px;
     }
   }
     .icon-link {
@@ -227,26 +264,20 @@ aside {
     // Footer Styling
     footer {
       position: relative;
-      padding-left: 182px;
-      left: 10px;
+      padding-left: 193px;
       width: 399px;
       background-color: #e1cebd;
       border-top: 1px solid #d9d9d9;
+      @include respond-to("for-tablet-portrait-up") {
+        position: relative;
+        left: 21px;
+        padding-left: 277px;
+        width: 399px;
+      }
       @include respond-to("for-tablet-landscape-up") {
-        width: 433px;
-        left: 47px;
+        position: relative;
+        left: 59px;
+        padding-left: 453px;
+        width: 778px;
       }
-
-
-      // @include respond-to("for-mega-desktop-up") {
-      //   left: 10px;
-      //   padding-left: 55px;
-      //   overflow-x: hidden;
-      //   background-color: #e1cebd;
-      //   border-top: 1px solid #d9d9d9;
-      //   @include respond-to("for-tablet-portrait-up") {
-      //     padding-left: 520px;
-      //     left: 52px;
-      //     }
-      //   }
-      }
+    }
