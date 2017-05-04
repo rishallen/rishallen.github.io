@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   $('.hidden').css('visibility','visible').hide().fadeIn(6000);
 
   $(".greeting").click(function(){
@@ -7,13 +8,12 @@ $(document).ready(function () {
 
   $("#sub").draggable({axis:"x"});
 
-  $("#link").click(function(event) {
-    event.preventDefault();
-    $("#selectable").selectable({
-      selected: function (event, ui) {
-        var selected = $("li[class$='ui-selected']").length;
-      }
-    });
+  $(function() {
+   $( "#selectable" ).selectable();
+
+
+  //  var href = $("a").attr('href');
+  //  window.location.href = this.href; //causes the browser to refresh and load the requested url
   });
 
 });

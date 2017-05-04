@@ -352,8 +352,7 @@ aside {
   padding: 1.2rem; }
 
 #selectable .ui-selected {
-  text-align: center;
-  color: white; }
+  color: grey; }
 
 .icon-link-item-map {
   padding-left: 67px; }
