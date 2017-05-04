@@ -7,7 +7,8 @@ $(document).ready(function () {
 
   $("#sub").draggable({axis:"x"});
 
-  $(function () {
+  $("#link").click(function(event) {
+    event.preventDefault();
     $("#selectable").selectable({
       selected: function (event, ui) {
         var selected = $("li[class$='ui-selected']").length;

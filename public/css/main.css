@@ -270,8 +270,9 @@ aside {
   @media (max-width: 899px) {
     aside {
       position: relative;
-      top: 0;
-      left: 100px; } }
+      top: -14px;
+      bottom: 29px;
+      left: 60px; } }
 
 .avatar {
   width: 158px;
@@ -314,6 +315,11 @@ aside {
   position: relative;
   top: 17px;
   right: -5px; }
+  @media (max-width: 899px) {
+    .resume-contact {
+      position: relative;
+      top: 17px;
+      right: -13px; } }
 
 .resume-contact-2 {
   padding-left: 40px; }
@@ -324,13 +330,13 @@ aside {
 .icon-link-item {
   display: flex;
   position: relative;
-  left: 111px;
+  left: 63px;
   padding-bottom: 10px;
   position: relative;
   top: 6px; }
   @media (min-width: 900px) {
     .icon-link-item {
-      left: 43px;
+      left: 28px;
       top: 17px;
       padding-bottom: 10px; } }
 
@@ -347,7 +353,7 @@ aside {
 
 #selectable .ui-selected {
   text-align: center;
-  color: red; }
+  color: white; }
 
 .icon-link-item-map {
   padding-left: 67px; }
