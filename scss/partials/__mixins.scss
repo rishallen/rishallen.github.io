@@ -1,17 +1,17 @@
 /** Media Query Mixins, Breakpoints **/
 @mixin respond-to($name) {
   @if $name == "for-phone-only" {
-    @media (max-width: 599px) {
+    @media (max-width: 899px) {
       @content;
     }
   }
   @else if $name == "for-tablet-portrait-up" {
-    @media (min-width: 600px) {
+    @media (min-width: 900px) {
       @content;
     }
   }
   @else if $name == "for-tablet-landscape-up" {
-    @media (min-width: 1024px) {
+    @media (min-width: 1640px) {
       @content;
     }
   }
