@@ -246,6 +246,12 @@ header.page-header {
     -ms-flex-direction: column;
     flex-direction: column; }
 
+#selectable .ui-selected {
+  color: grey; }
+
+#selectable2 .ui-selected {
+  color: grey; }
+
 .left-container {
   /* !row! | row-reverse | column | column-reverse */
   -webkit-box-direction: normal;
@@ -351,9 +357,6 @@ aside {
   color: #9ea6b3;
   padding: 1.2rem; }
 
-#selectable .ui-selected {
-  color: grey; }
-
 .icon-link-item-map {
   padding-left: 67px; }
   @media (min-width: 900px) {
@@ -372,6 +375,7 @@ aside {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+
 .personal-summary {
   display: flex;
   width: 77%;

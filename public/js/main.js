@@ -9,7 +9,11 @@ $(document).ready(function () {
   $("#sub").draggable({axis:"x"});
 
   $(function() {
-   $( "#selectable" ).selectable();
+   $("#selectable").selectable();
+  });
+
+  $(function() {
+   $("#selectable2").selectable();
   });
 
 });

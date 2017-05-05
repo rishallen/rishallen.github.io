@@ -142,7 +142,9 @@ header.page-header{
   }
 }
 #selectable .ui-selected {
-  // text-align: center;
+  color: grey;
+}
+#selectable2 .ui-selected {
   color: grey;
 }
 .left-container {
