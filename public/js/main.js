@@ -10,10 +10,6 @@ $(document).ready(function () {
 
   $(function() {
    $( "#selectable" ).selectable();
-
-
-  //  var href = $("a").attr('href');
-  //  window.location.href = this.href; //causes the browser to refresh and load the requested url
   });
 
 });

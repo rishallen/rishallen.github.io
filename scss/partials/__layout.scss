@@ -141,6 +141,10 @@ header.page-header{
     @include flex-direction(column);
   }
 }
+#selectable .ui-selected {
+  // text-align: center;
+  color: grey;
+}
 .left-container {
   @include flex-direction(column);
   position: relative;
@@ -246,10 +250,6 @@ aside {
     background-color: rgb(225, 206, 189);
     color: #9ea6b3;
     padding: 1.2rem;
-  }
-  #selectable .ui-selected {
-    // text-align: center;
-    color: grey;
   }
   .icon-link-item-map {
     padding-left: 67px;
