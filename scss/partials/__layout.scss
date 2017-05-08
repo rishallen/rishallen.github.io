@@ -253,6 +253,9 @@ aside {
     color: #9ea6b3;
     padding: 1.2rem;
   }
+  .icon_social:hover {
+    color:white;
+  }
   .icon-link-item-map {
     padding-left: 67px;
     @include respond-to("for-tablet-portrait-up") {
