@@ -16,4 +16,8 @@ $(document).ready(function () {
    $("#selectable2").selectable();
   });
 
+  $(function() {
+   $("#selectable-summary").selectable();
+  });
+
 });

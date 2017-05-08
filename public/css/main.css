@@ -246,6 +246,9 @@ header.page-header {
     -ms-flex-direction: column;
     flex-direction: column; }
 
+#selectable-summary .ui-selected {
+  color: grey; }
+
 #selectable .ui-selected {
   color: grey; }
 
