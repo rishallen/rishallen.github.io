@@ -40,14 +40,6 @@ gulp.task('img', function(){
   .pipe(gulp.dest('dist/img'))
 });
 
-gulp.task('img', function(){
-  return gulp.src('public/img/**/*.+(png|jpg|jpeg|gif|svg)')
-  .pipe(cache(imagemin({
-      interlaced: true
-    })))
-  .pipe(gulp.dest('dist/img'))
-});
-
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 })
