@@ -16,11 +16,15 @@
   <!-- jQuery UI -->
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- jQuery text rotator -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/jquery.simple-text-rotator.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-text-rotator/1.0.0/simpletextrotator.css"></script>
   <!--[if lt IE 9] -->
   <link rel="canonical" href="https://rishallen.github.io/">
   <link rel="stylesheet" href="public/css/main.css" type="text/css">
   <script src="public/js/main.js"></script>
   <!-- [if lt IE 9] -->
+
 </head>
   <body>
     <div class="wrapper">
@@ -28,21 +32,28 @@
         <div class="flex right-container">
           <header class="page-header panel">
             <h1 class="hidden">Risha Allen</h1>
-            <h3>Software Engineer</h3>
-          </header>
+              <div class="test" <marquee behavior="scroll" direction="down" scrollamount="2" height="100" width="350">
+                <h3 class="job-title rw-words-1">
+                  <span class="rotate">
+                    Software Engineer, Budding Developer
+                  </span>
+                </h3>
+              </div>
+            </header>
           <div class="executive-summary-container">
             <div class="executive-summary panel">
               <h2 class="executive-summary-title">about me</h2>
-              <p class="executive-summary-description">Professional problem solver with a passion for understanding user needs and motivations to transform difficult problems into meaningful solutions using modern technology.</p>
+              <p class="executive-summary-description">A passion for understanding user needs and motivations to transform difficult problems into meaningful solutions using modern technology.</p>
             </div>
 
             <!-- Begin Work Experience -->
             <section class="content-section">
-
-              <header class="section-header panel">
+              <header class="section-header">
                 <h2 class="resume-header">Skills</h2>
               </header>
-              <div class="resume-header-container">
+              <div id="flip">check!</div>
+
+              <div class="resume-header-container hide" id="panel">
                 <h3 class="resume-item-title">Languages | <span class="resume-item-languages">JavaScript, Ruby, HTML5, SASS, CSS3</span></h3>
                 <h3 class="resume-item-title">Frameworks | <span class="resume-item-languages">Rails, Sinatra, AngularJS, Express, React</span></h3>
                 <h3 class="resume-item-title">Databases | <span class="resume-item-languages">SQLite3, PostgreSQL, MongoDB</span></h3>
@@ -50,15 +61,14 @@
                 <h3 class="resume-item-title">Methodologies | <span class="resume-item-languages">agile/scrum, MVC, OOP, TDD, BEM</span></h3>
               </div> <!-- End .resume-header-conatiner -->
 
-
-              <header class="section-header panel">
+              <header class="section-header">
                 <h2 class="resume-header">Work Experience</h2>
               </header>
               <div class="flex resume-header-container">
                 <p class="flex resume-item-date">Sept 2016 Feb 2017</p>
                 <div class="resume-item" itemprop="worksfor">
-                  <h3 class="resume-item-title">Software Development Intern | <span class="resume-item-details">Indigo Slate</span></h3>
-                  <ul id="selectable" class="flex resume-item-list">
+                  <h3 class="resume-item-title" id="click2">Software Development Intern | <span class="resume-item-details">Indigo Slate</span></h3>
+                  <ul class="flex resume-item-list" id="panel2">
                     <li>Worked on a 5-page Microsoft website using AngularJS and SASS to reduce latency, increase customer traffic, and user efficiency.</li>
                     <li>Developed a single page internal web app that consumed a third-party library, which presented developers’ CodePens to designers, increasing the efficiency of cross-team collaboration.</li>
                     <li>Implemented user interfaces with modern technologies including Flexbox and Responsive web design.</li>
@@ -70,8 +80,8 @@
               <div class="flex resume-header-container">
                 <p class="flex resume-item-date">Sept 2009 June 2015</p>
                 <div class="resume-item" itemprop="worksfor">
-                  <h3 class="resume-item-title">Counselor | <span class="resume-item-details">Seattle Central College</span></h3>
-                  <ul id="selectable2" class="flex resume-item-list">
+                  <h3 class="resume-item-title" id="click3">Counselor | <span class="resume-item-details">Seattle Central College</span></h3>
+                  <ul class="flex resume-item-list" id="panel3">
                     <li>Successfully managed a caseload of 115 students, with an 85% yearly Associates degree completion rate and 46% yearly graduation and transfer rate.</li>
                     <li>Created a peer ambassador position to solve reliability inadequacies between student and counselor, which increased event participation and visibility on campus.</li>
                   </ul>
@@ -89,10 +99,10 @@
               <div class="flex resume-header-container">
                 <p class="flex resume-item-date">2016</p>
                 <div class="flex resume-item" itemprop="products">
-                  <h3 class="resume-item-title">Tonalyze | <span class="resume-item-details">Capstone Project & Primary Developer<span></h3>
+                  <h3 class="resume-item-title" id="click4">Tonalyze | <span class="resume-item-details">Capstone Project & Primary Developer<span></h3>
 
                   <p class="resume-item-languages">JavaScript, Node Express, D3, External API</p>
-                  <p class="resume-item-summary" id="selectable-summary">
+                  <p class="resume-item-summary" id="panel4">
                     A Chrome Extension for Gmail that provides a sentiment analysis for users to become aware of their tone and enables them to align to the intended tone before sending the email.
                   </p>
                   <!-- GitHub Link -->
@@ -106,9 +116,9 @@
               <div class="flex resume-header-container">
                 <p class="flex resume-item-date">2016</p>
                 <div class="resume-item" itemprop="produced products">
-                  <h3 class="resume-item-title">Besty | <span class="resume-item-details">Pair Project</span></h3>
+                  <h3 class="resume-item-title" id="click5">Besty | <span class="resume-item-details">Pair Project</span></h3>
                   <p class="resume-item-languages">Ruby on Rails, User authentication, HTML, CSS</p>
-                  <p class="resume-item-summary">
+                  <p class="resume-item-summary" id="panel5">
                     Mock e-commerce website where users can browse bee and Beyonce themed products, add them to their cart, check out, enter payment information, and complete their purchase.
                   </p>
                   <!-- GitHub Link -->
@@ -121,9 +131,9 @@
               <div class="flex resume-header-container">
                 <p class="resume-item-date">2016</p>
                 <div class="resume-item" itemprop="produced products">
-                  <h3 class="resume-item-title">World Traveler | <span class="resume-item-details">Single Project</span></h3>
+                  <h3 class="resume-item-title" id="click6">World Traveler | <span class="resume-item-details">Single Project</span></h3>
                   <p class="resume-item-languages">Ruby on Rails, User authentication, External API</p>
-                  <p class="resume-item-summary">
+                  <p class="resume-item-summary" id="panel6">
                     Travel search app where user can make destination searches.
                   </p>
                   <!-- GitHub Link -->
@@ -144,18 +154,18 @@
               <div class="flex resume-header-container">
                 <p class="flex resume-item-date">Feb 2017<br/>Present</p>
                 <div class="resume-item" itemprop="education">
-                  <h3 class="resume-item-title">Floodgate Academy</span></h3>
-                  <p class="resume-item-summary">
+                  <h3 class="resume-item-title" id="click7">Floodgate Academy</span></h3>
+                  <p class="resume-item-summary" id="panel7">
                     A coding course to strengthen front-end technologies and methodologies by creating HTML5, CSS3 and JavaScript projects.
                   </p>
                 </div>
               </div> <!-- End .resume-header-container-->
 
               <div class="flex resume-header-container">
-                <p class="flex resume-item-date">Feb 2016 Feb 2017</p>
+                <p class="flex resume-item-date">Feb 2016</br>Feb 2017</p>
                 <div class="resume-item" itemprop="education">
-                  <h3 class="resume-item-title">Ada Developers Academy</span></h3>
-                  <p class="resume-item-summary">
+                  <h3 class="resume-item-title" id="click8">Ada Developers Academy</span></h3>
+                  <p class="resume-item-summary" id="panel8">
                     Selective (&lt;10% acceptance) year-long software development boot camp for women transitioning into technology. Seven months of instruction focusing on Rails, JavaScript, HTML/CSS, data structures and algorithms.
                   </p>
                 </div>
@@ -164,21 +174,21 @@
               <div class="flex resume-header-container">
                 <p class="flex resume-item-date">Sept 2005 June 2007</p>
                 <div class="resume-item" itemprop="education">
-                  <h3 class="resume-item-title">Seattle Pacific University</span></h3>
-                  <p class="resume-item-summary">MS in Marriage and Family Therapy</p>
+                  <h3 class="resume-item-title" id="click9">Seattle Pacific University</span></h3>
+                  <p class="resume-item-summary" id="panel9">MS in Marriage and Family Therapy</p>
                 </div>
               </div> <!-- End .resume-header-container-->
 
               <div class="flex resume-header-container">
                 <p class="flex resume-item-date">Sept 2000<br/> June 2004</p>
                 <div class="resume-item" itemprop="education">
-                  <h3 class="resume-item-title">University of Washington</span></h3>
-                  <p class="resume-item-summary">BA in Communications</p>
+                  <h3 class="resume-item-title" id="click10">University of Washington</span></h3>
+                  <p class="resume-item-summary" id="panel10">BA in Communications</p>
                 </div>
               </div>
             </section>
-          </div> <!-- End of .right-container -->
-        </div> <!-- End of .executive-summary-container -->
+          </div> <!-- End of .executive-summary-container -->
+        </div> <!-- End of .right-container -->
         <!-- End of Edcuation -->
 
         <!-- Personal Contact Begin -->
@@ -187,29 +197,25 @@
             <section class="resume-icon-info">
               <div class="resume-personal-info-details">
                 <img src="public/img/risha.png" alt="human face" class="avatar" title="human face of a female, turned to the side. She is wearing braids"/>
-                <p id="sub" class="greeting">hello <span id="sub1">!</span></p>
-                <div class="greeting-border"></div>
+                <p id="sub" class="greeting">contact me</p>
+                <p class="resume-contact" style="font-size:14px; text-align: center; padding-top: 22px; border-top: 2px solid rgb(225, 206, 189)">15400 SE 155TH PL #30</br> Renton, WA</br>98058</p>
+                <p class="resume-contact" style="font-size:14px; text-align: center; padding:10px 0px 22px; border-bottom: 2px solid rgb(225, 206, 189)">425 - 652 - 3702</p>
 
                 <div class="icon-menu-container">
-                  <ul class="icon-menu" id="selectable-icon">
-                    <!-- Map Icon -->
-                    <li class="icon-link-item-map">
-                      <!-- <p class="icon-link-map" itemprop="url"><i class="icon_social fa fa-map-marker" aria-hidden="true" style="font-size:25px;"></i></p> -->
-                      <div class="resume-contact-container">
-                        <p class="resume-contact-1">15400 SE 155TH PL #30</p>
-                        <p class="resume-contact-2">Seattle, WA</p>
-                        <p class="resume-contact-3">98058</p>
-                      </div>
-                    </li>
-
+                  <ul class="flex icon-menu" id="selectable-icon">
                     <!-- Mobile Icon -->
-                    <div class="icon-link-item">
-                      <li class="link__icon_social"><div href="" class="icon-link" itemprop="url"><i class="icon_social fa fa-mobile" aria-hidden="true" style="font-size:28px;"></i></div></li>
-                      <p class="resume-contact">425 - 652 - 3702</p>
+                    <div class="icon-link-item hide-when">
+                      <li class="link__icon_social">
+                        <a href="tel:+4256523702" class="icon-link hide-when" itemprop="url">
+                          <i class="icon_social fa fa-mobile" style="font-size:34px">
+                          </i>
+                        </a>
+                      </li>
+                      <p class="resume-contact" style="font-size:14px;">425 - 652 - 3702</p>
                     </div>
 
                     <!-- Email Icon -->
-                    <div class="icon-link-item">
+                    <div class="flex icon-link-item">
                       <li class="link__icon_social">
                         <a href="mailto:risha.a@hotmail.com" class="icon-link" itemprop="url">
                           <i class="icon_social fa fa-envelope" style="font-size:20px">
@@ -220,7 +226,7 @@
                     </div>
 
                     <!-- Github Icon -->
-                    <div class="icon-link-item">
+                    <div class="flex icon-link-item">
                       <li class="link__icon_social">
                         <a href="https://github.com//rishallen" class="icon-link" itemprop="url">
                           <i class="icon_social fa fa-github" style="font-size:25px"></i>
@@ -230,7 +236,7 @@
                     </div>
 
                     <!-- Twitter Icon -->
-                    <div class="icon-link-item">
+                    <div class="flex icon-link-item">
                       <li class="link__icon_social">
                         <a href="https://twitter.com/risha_real" class="icon-link" itemprop="url">
                           <i class="icon_social fa fa-twitter-square" style="font-size:25px"></i>
@@ -240,7 +246,7 @@
                     </div>
 
                     <!-- LinkedIn Icon -->
-                    <div class="icon-link-item">
+                    <div class="flex icon-link-item">
                       <li class="link__icon_social">
                         <a href="https://www.linkedin.com/in/risha-allen-00a87b18/"class="icon-link" itemprop="url">
                           <i class="icon_social fa fa-linkedin-square" style="font-size:25px"></i>
@@ -248,8 +254,18 @@
                       </li>
                       <p class="resume-contact">linkedin.com</p>
                     </div>
-                  </ul>
-                </div> <!-- icon-menu-container -->
+                    <!-- Map Icon -->
+                    <div class="icon-link-item hide-when">
+                      <li class="link__icon_social">
+                        <a href="" class="icon-link" itemprop="url">
+                          <i class="icon_social fa fa-map-marker" aria-hidden="true" style="font-size:28px"></i>
+                        </a>
+                      </li>
+                      <p class="resume-contact" style="font-size:14px; text-align: justify;;">15400 SE 155TH PL #30</br> Renton, WA</br>98058</p>
+                    </div>
+
+                  </ul><!-- End of #icon-menu -->
+                </div><!-- icon-menu-container -->
               </div> <!-- .resume-personal-info-details -->
             </section>
           </aside>
