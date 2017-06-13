@@ -253,12 +253,6 @@ header.page-header {
         width: 575px;
         display: none; } }
 
-.rw-words-1 h3 {
-  animation: rotateWordsFirst 18s linear infinite 0s; }
-
-.rw-words-2 h3 {
-  animation: rotateWordsSecond 18s linear infinite 0s; }
-
 .left-container {
   /* !row! | row-reverse | column | column-reverse */
   -webkit-box-direction: normal;
