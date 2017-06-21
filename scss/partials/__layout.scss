@@ -1,0 +1,303 @@
+// Top header in container styling
+.container {
+  @include flex(flex);
+  @include flex-flow(row-reverse nowrap);
+  @include respond-to("for-phone-only") {
+    @include flex(flex);
+    @include flex-flow(column-reverse);
+  }
+}
+.page-header.panel {
+  width: 77%;
+  @include respond-to("for-tablet-portrait-up") {
+    width: 90%;
+  }
+  @include respond-to("for-tablet-landscape-up") {
+    width: 89%;
+  }
+}
+header.page-header{
+  height: 200px;
+  width: 650px;
+  padding-top: 62px;
+  padding-left: 70px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  background: rgb(225, 206, 189); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(225, 206, 189), rgb(238, 227, 220)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(225, 206, 189),  rgb(238, 227, 220)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(225, 206, 189), rgb(238, 227, 220)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(225, 206, 189),  rgb(238, 227, 220)); /* Standard syntax (must be last) */
+  h1 {
+    line-height: 3.1;
+    letter-spacing: 1.0rem;
+    position: relative;
+    left: 43px;
+    @include respond-to("for-phone-only") {
+      left: -26px;
+    }
+  }
+  h3 {
+    background-color: rgb(126,127,126);
+    padding: 7px;
+    letter-spacing: 1.0rem;
+    width: 63%;
+    padding-left: 15px;
+    position: relative;
+    right: 9px;
+    left: 29px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    @include respond-to("for-phone-only") {
+      width: 98%;
+      left: -40px;
+      font-size: 14px;
+    }
+    @include respond-to("for-tablet-portrait-up") {
+      width: 75%;
+    }
+  }
+}
+.hidden {
+  visibility: hidden;
+  @include respond-to("for-phone-only") {
+    position: relative;
+    right: 31px;
+  }
+}
+// Styling About me section
+.executive-summary-container {
+  @include respond-to("for-phone-only") {
+    width: 517px;
+  }
+  @include respond-to("for-tablet-portrait-up") {
+    width: 636px;
+  }
+  @include respond-to("for-tablet-landscape-up") {
+    width: 660px;
+  }
+}
+// Work Experience Styling
+.right-container {
+  width: 650px;
+  padding-left: 15px;
+  @include flex-direction(column);
+  @include respond-to("for-phone-only") {
+    width: 575px;
+  }
+}
+.resume-item-languages {
+  font-size: 14px;
+  line-height: 2rem;
+}
+.section-header {
+  padding: 20px 0px 20px;
+  .resume-header {
+    text-transform: uppercase;
+  }
+  .resume-header-container {
+    @include flex(flex);
+    @include flex-direction(row);
+    @include align-items(flex-start);
+  }
+}
+.resume-item-date {
+  width: 42%;
+  margin-right: 10px;
+  padding-top: 6px;
+  line-height: 1.5rem;
+}
+.resume-item {
+  @include flex(flex);
+  @include flex-direction(column);
+    line-height: 1.5rem;
+    width: 210%;
+  .resume-item-title {
+    padding: 8px 0px 8px;
+  }
+  .resume-item-summary {
+    padding-bottom: 25px;
+    @include respond-to("for-phone-only") {
+      display: none;
+    }
+  }
+  .resume-item-details {
+    font-size: 12px;
+  }
+  .resume-item-languages {
+    font-size: 13px;
+    padding-bottom: 5px;
+  }
+  h3 {
+    letter-spacing: .1rem;
+  }
+  .resume-item-list {
+    @include flex(flex);
+    @include flex-direction(column);
+    @include respond-to("for-phone-only") {
+      width: 575px;
+      display: none;
+    }
+  }
+}
+.left-container {
+  @include flex-direction(column);
+  position: relative;
+  left: 17px;
+  width: 54%;
+  background-color: rgb(126,127,126);
+  @include respond-to("for-tablet-portrait-up") {
+    right: 25px;
+    left: 2px;
+    width: 265px;
+  }
+}
+aside {
+  position: fixed;
+  top: 0;
+  @include respond-to("for-phone-only") {
+    position: relative;
+    top: -14px;
+    bottom: 29px;
+    left: 60px;
+  }
+}
+//Image Styling
+.avatar {
+  width: 173px;
+  margin: 31px 0px 0px 100px;
+  display: block;
+  overflow: hidden;
+  border-radius: 100px;
+  border: 2px solid white;
+  @include respond-to("for-tablet-portrait-up") {
+  margin: 19px 0px 0px 47px;
+  }
+  @include respond-to("for-phone-only") {
+    margin: 31px 0px 0px 115px;
+    display: none;
+  }
+}
+// Styling About me section
+.executive-summary-container {
+  @include respond-to("for-phone-only") {
+    width: 517px;
+  }
+  @include respond-to("for-tablet-portrait-up") {
+    width: 636px;
+  }
+  @include respond-to("for-tablet-landscape-up") {
+    width: 660px;
+  }
+}
+.executive-summary {
+  padding: 25px 0 25px 0px;
+  h2 {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+}
+// Icon Styling
+.resume-contact-container {
+  padding: 16px 0px 0px 19px;
+  @include respond-to("for-tablet-portrait-up") {
+    padding: 16px 0px 0px 20px;
+  }
+}
+.resume-contact {
+  position: relative;
+  top: 17px;
+  right: -10px;
+  color: #fff;
+  @include respond-to("for-phone-only") {
+    position: relative;
+    right: -14px;
+    display: none;
+  }
+}
+.icon-menu-container {
+  @include respond-to("for-phone-only") {
+    position: relative;
+    right: 33px;
+  }
+}
+.icon-menu {
+  @include flex-direction(column);
+  @include respond-to("for-phone-only") {
+    @include flex-direction(row);
+  }
+}
+.icon-link-item {
+  @include flex(flex);
+  position: relative;
+  left: 63px;
+  padding-bottom: 10px;
+  position: relative;
+  @include respond-to("for-tablet-portrait-up") {
+    left: 28px;
+    top: 58px;
+    padding-bottom: 10px;
+  }
+  @include respond-to("for-phone-only") {
+    top: 3px;
+    padding-left: 5px;
+  }
+}
+.link__icon_social  {
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background-color: rgb(225, 206, 189);
+  padding: 1.2rem;
+}
+.icon_social:hover {
+  color: #9ea6b3;
+}
+.icon-link-item-map {
+  padding-left: 67px;
+  @include respond-to("for-tablet-portrait-up") {
+    padding: 16px 0px 24px 20px;
+  }
+}
+.icon-link {
+  vertical-align: middle;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  bottom: 4px;
+}
+li a {
+  color: white;
+}
+.icon_social {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.personal-summary {
+  display: flex;
+  width: 77%;
+  margin: 0 46px;
+  font-size: 12px;
+  color: #fff;
+}
+.greeting {
+  font-family: 'Meddon', cursive;
+  font-size: 33px;
+  color: #eee3dc;
+  padding: 29px 0px 0px 29px;
+  @include respond-to("for-phone-only") {
+    padding: 29px 0px 0px 84px;
+  }
+}
+@include respond-to("for-tablet-portrait-up") {
+  .hide-when {
+    display: none;
+  }
+}
