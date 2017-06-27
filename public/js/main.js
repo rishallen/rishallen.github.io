@@ -6,20 +6,29 @@ $(document).ready(function () {
   $("#flip").click(function(){
      $("#panel").slideToggle("slow");
   });
+  // Work Expereince: MEMBERSHIP
+  $("#click3").click(function(){
+     $("#panel3").slideToggle("slow");
+  });
 
   //Work Expereince: Software Development Intern
   $("#click2").click(function(){
      $("#panel2").slideToggle("slow");
   });
 
-  //Work Expereince: Counselor
-  $("#click3").click(function(){
-     $("#panel3").slideToggle("slow");
+  //Work Expereince: Counselor/Faculty
+  $("#click13").click(function(){
+     $("#panel13").slideToggle("slow");
+  });
+
+  // Work Expereince: MEMBERSHIP
+  $("#click11").click(function(){
+     $("#panel11").slideToggle("slow");
   });
 
   // Project: Tonalyze
-  $("#click4").click(function(){
-     $("#panel4").slideToggle("slow");
+  $("#click14").click(function(){
+     $("#panel14").slideToggle("slow");
   });
 
   // Project: Besty
@@ -27,27 +36,37 @@ $(document).ready(function () {
      $("#panel5").slideToggle("slow");
   });
 
-  // Project: World Traveler
+  // Project: Sentiment
   $("#click6").click(function(){
      $("#panel6").slideToggle("slow");
   });
 
-  // Education: Floodgate
-  $("#click7").click(function(){
-     $("#panel7").slideToggle("slow");
+  // Project: Sentiment
+  $("#click6").click(function(){
+     $("#panel6").slideToggle("slow");
+  });
+
+  // Project: Sentiment
+  $("#click15").click(function(){
+     $("#panel15").slideToggle("slow");
   });
 
   // Education: Floodgate
+  $("#click16").click(function(){
+     $("#panel16").slideToggle("slow");
+  });
+
+  // Education: ADA
   $("#click8").click(function(){
      $("#panel8").slideToggle("slow");
   });
 
-  // Education: Floodgate
+  // Education: SPU
   $("#click9").click(function(){
      $("#panel9").slideToggle("slow");
   });
 
-  // Education: Floodgate
+  // Education: UW
   $("#click10").click(function(){
      $("#panel10").slideToggle("slow");
   });

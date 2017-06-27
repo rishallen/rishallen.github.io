@@ -96,11 +96,11 @@ header.page-header{
   .resume-header {
     text-transform: uppercase;
   }
-  .resume-header-container {
-    @include flex(flex);
-    @include flex-direction(row);
-    @include align-items(flex-start);
-  }
+}
+.resume-header-container {
+  @include flex(flex);
+  @include flex-direction(column);
+  @include align-items(flex-start);
 }
 .resume-item-date {
   width: 42%;
